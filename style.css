@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px
+}
+
+header h4 {
+    position: absolute;
+    left: 1%;
+    bottom: 1rem;
+    font-size: 2.6rem;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+
+.logo-header {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    padding: 15px;
+}
+
+.logo.active {
+    bottom: 0; 
+    left: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    left: 800px;
+    bottom: 0px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.logo-delayed {
+    position: relative;
+    display: inline-block;
+    bottom: -60px;
+    opacity: 0;
+    padding: 15px;
+}
+
+.logo-delayed.active {
+    bottom: -40px;
+    right: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo-delayed.fade {
+    bottom: -40px;
+    right: 800px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
