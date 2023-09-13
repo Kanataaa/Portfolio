@@ -3,6 +3,8 @@ let logoHeader = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');
 let delayedLogo = document.querySelector('.logo-delayed');
 
+let navHidden = document.querySelector('.hide');
+
 window.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(() => {
         logoSpan.forEach((span, idx)=>{
@@ -32,6 +34,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
         setTimeout(() => {
             intro.style.left = '-210vh'
-        }, 2700);   
+        }, 2700);
+
+        setTimeout(() => {
+            intro.remove()
+        }, 5000);
     })
 })
